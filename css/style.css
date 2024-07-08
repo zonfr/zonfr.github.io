@@ -1,0 +1,87 @@
+a{color: inherit;}
+body{background-color: #191919;}
+#navigation-bar{
+    /* background-color:#CE1E27; */
+    height: 50px;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+}
+
+#home-button{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    position: fixed;
+    top:8px;
+    left:8px;
+    font-size: 20px;
+}
+
+#about-button{
+    width: 130px;
+    position: fixed;
+    right:8px;
+    bottom:8px;
+    font-size: 20px;
+}
+
+#work-button{
+    width: 150px;
+    border-radius: 5px;
+}
+
+.redirect-button{
+    height: 50px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100px;
+    color: #D8D8D8;
+    background-color: black;
+    font-family:cursive;
+}
+
+.normal-text{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#main-page{
+    text-align: center;
+}
+
+#welcome-title{
+    text-align: center;
+    color: #CE1E27;
+}
+
+#work-title{
+    text-align: center;
+    color: #CE1E27;
+}
+
+#about-title{
+    color: #CE1E27;
+}
+
+#about-text{
+    font-size: 18px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:white;
+}
+
+#home-text{
+    font-size: 18px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:white;
+}
+
+#error-text{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: #CE1E27;
+}
