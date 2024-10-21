@@ -10,9 +10,14 @@ body{background-color: #191919; max-width: 100%; overflow-x: hidden;}
 }
 
 #elumin-button{
-    width: 150px;
-    border-radius: 5px;
+    /* background: url(https://i.ibb.co/vD3zdTH/logo-full-res-centered-v1.png);
+    background-size:100%; */
 }
+#firestage-button{
+    /* background: url(https://i.ibb.co/ZM5Rs8f/icon-firestage.png);
+    background-size:100%; */
+} 
+/* <img class="img-card" src="https://i.ibb.co/vD3zdTH/logo-full-res-centered-v1.png"></img> */
 
 #home-button{
     height: 180px;
@@ -23,11 +28,13 @@ body{background-color: #191919; max-width: 100%; overflow-x: hidden;}
     left:25px;
     border: none;
     cursor: pointer;
-    background: url(https://i.ibb.co/55nXNHP/zonfr-logo.png);
+    background: url(https://i.ibb.co/p3jCVzb/zonfrredlaser.png);
     background-size:100%;
 }
 
 #game-card-container {
+    position: relative;
+    left: 20%;
     display: grid;
     grid-template-columns: 165px 165px 165px;
     width: 60%;
@@ -35,10 +42,8 @@ body{background-color: #191919; max-width: 100%; overflow-x: hidden;}
 
 #main-page{
     position: relative;
-    top:-150px;
-    width: 83%;
+    width: 100%;
     height: 1000px;
-    left: 17%;
     text-align: center;
 }
 
@@ -66,14 +71,91 @@ body{background-color: #191919; max-width: 100%; overflow-x: hidden;}
     font-family:cursive;
 }
 
+.widget-steam{
+    width: 50%;
+    height: 190px;
+    position: relative;
+}
+
 .game-card{
     height: 150px;
+    text-align: center;
     width: 150px;
-    border-radius: 5px;
+    /* filter: drop-shadow(2px 2px 1px); */
+}
+
+.card-button{
+    position: relative;
+    top: -80%;
+    height: 150px;
+    text-align: center;
+    width: 150px;
+    border: solid 4px;
+    border-radius: 10px;
+    border-color: #000000;
+    color: #D8D8D8;
+    background: none;
+    backdrop-filter: blur(5px);
+    filter: drop-shadow(0px 0px 3px black);
+}
+
+.img-card{
+    height: 80%;
+    position: relative;
+    top: 12%;
+    /* filter: drop-shadow(0px 0px 0px #D8D8D8); */
+    
+    /* filter: blur(1px);
+    -webkit-filter: blur(1px); */
+}
+
+#elumin-page{
+    position: relative;
+    top: -50px;
+    width: 100%;
+    height: 100%;
+}
+
+#title-img{
+    height: 300px;
+    border: none;
+}
+
+#logo-img{
+    position: relative;
+    bottom: 60px;
+    height: 130px;
+    width: 130px;
+    border: none;
 }
 
 .normal-text{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.desc-text{
+    text-align: justify;
+    position: relative;
+    left: 25%;
+    width: 50%;
+    height: 15%;
+    font-size: 18px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #D8D8D8;
+}
+
+
+.screenshot-container{
+    position: relative;
+    left: 18%;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 200px 200px;
+    width: 60%;
+}
+
+.screenshot-img{
+    height: 175px;
 }
 
 #welcome-title{
