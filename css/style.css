@@ -9,16 +9,6 @@ body{background-color: #191919; max-width: 100%; overflow-x: hidden;}
     font-size: 20px;
 }
 
-#elumin-button{
-    /* background: url(https://i.ibb.co/vD3zdTH/logo-full-res-centered-v1.png);
-    background-size:100%; */
-}
-#firestage-button{
-    /* background: url(https://i.ibb.co/ZM5Rs8f/icon-firestage.png);
-    background-size:100%; */
-} 
-/* <img class="img-card" src="https://i.ibb.co/vD3zdTH/logo-full-res-centered-v1.png"></img> */
-
 #home-button{
     height: 180px;
     width: 180px;
@@ -34,10 +24,12 @@ body{background-color: #191919; max-width: 100%; overflow-x: hidden;}
 
 #game-card-container {
     position: relative;
-    left: 20%;
+    top: 30px;
+    margin: auto;
     display: grid;
     grid-template-columns: 165px 165px 165px;
-    width: 60%;
+    grid-template-rows: 165px 165px;
+    width: 25%;
   }
 
 #main-page{
@@ -57,6 +49,12 @@ body{background-color: #191919; max-width: 100%; overflow-x: hidden;}
     font-size: 125px;
 }
 
+.video-player{
+    position: absolute;
+    left: 15%; 
+    width: 70%;
+    height: 70%;
+}
 .redirect-button{
     height: 50px;
     border: none;
@@ -95,7 +93,8 @@ body{background-color: #191919; max-width: 100%; overflow-x: hidden;}
     border-color: #000000;
     color: #D8D8D8;
     background: none;
-    backdrop-filter: blur(5px);
+    background-color: #00000023;
+    backdrop-filter: blur(2px);
     filter: drop-shadow(0px 0px 3px black);
 }
 
@@ -103,22 +102,29 @@ body{background-color: #191919; max-width: 100%; overflow-x: hidden;}
     height: 80%;
     position: relative;
     top: 12%;
-    /* filter: drop-shadow(0px 0px 0px #D8D8D8); */
-    
-    /* filter: blur(1px);
-    -webkit-filter: blur(1px); */
 }
 
 #elumin-page{
     position: relative;
     top: -50px;
     width: 100%;
+    /* background-image: url("https://i.ibb.co/7j3CQPx/steam-background-real-v1.png"); */
+    /* background-repeat: repeat; */
     height: 100%;
 }
 
-#title-img{
+#firestage-page{
+    background-image: url("https://i.ibb.co/mbPz4mN/background-firestage.png");
+    background-repeat: repeat;
+}
+
+.title-img{
     height: 300px;
     border: none;
+}
+
+.work-title{
+    color: #D8D8D8;
 }
 
 #logo-img{
@@ -144,14 +150,14 @@ body{background-color: #191919; max-width: 100%; overflow-x: hidden;}
     color: #D8D8D8;
 }
 
-
 .screenshot-container{
     position: relative;
-    left: 18%;
+    left: 20%;
     display: grid;
     grid-template-columns: 400px 400px 400px;
     grid-template-rows: 200px 200px;
     width: 60%;
+    height: 60%;
 }
 
 .screenshot-img{

@@ -11,6 +11,7 @@ const routes = {
     "/elumin": "/pages/elumin.js",
     "/firestage": "/pages/firestage.js",
     "/concernant": "/pages/about.js",
+    "/showreel-2024": "/pages/showreel-2024.js",
 };
 
 const handleLocation = async () => {
