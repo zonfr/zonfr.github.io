@@ -1,6 +1,6 @@
 <div id="welcome-container">
     <h1 id="welcome-title" class="normal-text">HEY, WELCOME</h1>
-    <p id="home-text">I'M A SOLO GAME DEVELOPER</p>
+    <p id="home-text">I'M A FRENCH SOLO GAME DEVELOPER</p>
     <p id="home-text">HERE ARE ALL THE THINGS I'VE MADE :</p>
     <div id="game-card-container">
         <div class="game-card">

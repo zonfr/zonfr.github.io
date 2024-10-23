@@ -9,6 +9,8 @@
         <img class="screenshot-img" src="src\img\screenshot5.jpg"></img>
         <img class="screenshot-img" src="src\img\screenshot6.jpg"></img>
         <img class="screenshot-img" src="src\img\screenshot7.png"></img>
+        <img class="screenshot-img" src="src\img\screenshot8.jpg"></img>
+        <img class="screenshot-img" src="src\img\screenshot9.jpg"></img>
     </div>
     <p><iframe src="https://store.steampowered.com/widget/2684580/" frameborder="0" class="widget-steam"></iframe></p>
 </div>

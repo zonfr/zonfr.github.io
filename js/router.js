@@ -10,7 +10,7 @@ const routes = {
     "/": "/pages/home.js",
     "/elumin": "/pages/elumin.js",
     "/firestage": "/pages/firestage.js",
-    "/concernant": "/pages/about.js",
+    "/about": "/pages/about.js",
     "/showreel-2024": "/pages/showreel-2024.js",
 };
 
