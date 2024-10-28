@@ -9,44 +9,44 @@ body{background-color: #191919; max-width: 100%; overflow-x: hidden;}
     font-size: 20px;
 }
 
+#home-text{
+    position: relative;
+    max-width: 50%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.basic-text{
+    font-size: 18px;
+    font-family:"Lato";
+    color:white;
+}
+
 #home-button{
-    height: 180px;
-    width: 180px;
+    max-width: 10%;
+    height: auto;
     border-radius: 50px;
     position: fixed;
-    top:8px;
-    left:25px;
+    top:10px;
+    left:10px;
     border: none;
     cursor: pointer;
-    background: url(https://i.ibb.co/p3jCVzb/zonfrredlaser.png);
-    background-size:100%;
 }
 
 #game-card-container {
-    position: relative;
-    top: 30px;
     margin: auto;
+    margin-top: 7%;
     display: grid;
-    grid-template-columns: 165px 165px 165px;
-    grid-template-rows: 165px 165px;
-    width: 25%;
+    grid-template-columns: 35% 35% 35%;
+    /* grid-template-rows: 165px 165px; */
+    /* background-color: #CE1E27; */
+    width: 480px;
   }
 
 #main-page{
     position: relative;
     width: 100%;
-    height: 1000px;
     text-align: center;
-}
-
-#zonfr-title{
-    position: relative;
-    top:-80px;
-    text-align: left;
-    left:230px;
-    color: #CE1E27;
-    font-family:"Lato";
-    font-size: 125px;
 }
 
 .video-player{
@@ -72,7 +72,7 @@ body{background-color: #191919; max-width: 100%; overflow-x: hidden;}
 .widget-steam{
     width: 50%;
     height: 190px;
-    position: relative;
+    padding-top: 6%;
 }
 
 .game-card{
@@ -106,7 +106,6 @@ body{background-color: #191919; max-width: 100%; overflow-x: hidden;}
 
 #elumin-page{
     position: relative;
-    top: -50px;
     width: 100%;
     /* background-image: url("https://i.ibb.co/7j3CQPx/steam-background-real-v1.png"); */
     /* background-repeat: repeat; */
@@ -116,23 +115,32 @@ body{background-color: #191919; max-width: 100%; overflow-x: hidden;}
 #firestage-page{
     background-image: url("https://i.ibb.co/mbPz4mN/background-firestage.png");
     background-repeat: repeat;
+    height: 1000px; 
 }
 
-.title-img{
-    height: 300px;
-    border: none;
+#showreel-page{
+    height: 900px; 
 }
 
 .work-title{
     color: #D8D8D8;
 }
 
-#logo-img{
+#elumin-title{
+    
+}
+
+#elumin-title{
+    margin: auto;
+}
+
+.title-img{
+    width: 30%;
+}
+
+#logo-title-img{
+    width: 40%;
     position: relative;
-    bottom: 60px;
-    height: 130px;
-    width: 130px;
-    border: none;
 }
 
 .normal-text{
@@ -142,26 +150,26 @@ body{background-color: #191919; max-width: 100%; overflow-x: hidden;}
 .desc-text{
     text-align: justify;
     position: relative;
-    left: 25%;
-    width: 50%;
+    width: 70%;
     height: 15%;
     font-size: 18px;
     font-family:"Lato";
     color: #D8D8D8;
+    margin: auto;
 }
 
 .screenshot-container{
-    position: relative;
-    left: 20%;
     display: grid;
-    grid-template-columns: 400px 400px 400px;
-    grid-template-rows: 200px 200px;
-    width: 60%;
-    height: 60%;
+    /* background-color: #CE1E27; */
+    grid-template-columns: 36.9% 36.9% 36.9%;
+    grid-template-rows: 40% 40%;
+    width: 70%;
+    margin: auto;
+    padding-top: 2%;
 }
 
 .screenshot-img{
-    height: 175px;
+    width: 70%;
     border: solid 3px black;
     border-radius: 5px;
 }
@@ -171,22 +179,12 @@ body{background-color: #191919; max-width: 100%; overflow-x: hidden;}
     color: #CE1E27;
 }
 
-#elumin-title{
-    text-align: center;
-    color: #CE1E27;
-}
 
 #about-title{
     color: #CE1E27;
 }
 
 #about-text{
-    font-size: 18px;
-    font-family:"Lato";
-    color:white;
-}
-
-#home-text{
     font-size: 18px;
     font-family:"Lato";
     color:white;

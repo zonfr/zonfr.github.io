@@ -1,5 +1,7 @@
 <div id="elumin-page">
-    <img id="logo-img" src="src\img\elumin_logo.png"></img> <img class="title-img" src="src\img\elumin_title.png"></img>
+    <div id="elumin-title">
+        <img id="logo-title-img" src="src\img\elumin_logo_title.png"/>
+    </div>
     <p class="desc-text">Elumin is an exploration game in an energy plant on an isolated isle, you&#x27;re a mechanical engineer, your job is to do maintenance all around the site. When you arrive the 14 people team you&#x27;re supposed to find is nowhere to be found. The energy production sector can&#x27;t be turned off due to an unknown issue. From now on you&#x27;re the only one in charge of keeping operations stable. In the mean time, exploring the site will grant you answers on what happened and why.</p>
     <div class="screenshot-container">
         <img class="screenshot-img" src="src\img\screenshot1.jpg"></img>

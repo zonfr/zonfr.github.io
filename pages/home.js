@@ -1,7 +1,9 @@
 <div id="welcome-container">
-    <h1 id="welcome-title" class="normal-text">HEY, WELCOME</h1>
-    <p id="home-text">I'M A FRENCH SOLO GAME DEVELOPER</p>
-    <p id="home-text">HERE ARE ALL THE THINGS I'VE MADE :</p>
+    <div id="home-text">
+        <h1 id="welcome-title" class="normal-text">HEY, WELCOME</h1>
+        <p class="basic-text">I'M A FRENCH SOLO GAME DEVELOPER</p>
+        <p class="basic-text">HERE ARE SOME OF THE THINGS I'VE MADE :</p>
+    </div>
     <div id="game-card-container">
         <div class="game-card">
             <img class="img-card" src="https://i.ibb.co/vD3zdTH/logo-full-res-centered-v1.png"></img>
