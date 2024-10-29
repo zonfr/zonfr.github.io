@@ -17,6 +17,10 @@
             <img class="img-card" src="https://i.ibb.co/DL7TqXn/Unknown-pdp.png"></img>
             <button value="/showreel-2024" class="redirect-button card-button" onclick="route(), topFunction()">SHOWREEL</button>
         </div>
+        <div class="game-card">
+            <img class="img-card" src="https://i.ibb.co/0Z09qqP/zonfrlaser-itch.png"></img>
+            <a href="https://zonfr.itch.io/" target="_blank" class="redirect-button card-link"><p style="position:relative;top:30%;">ITCH.IO</p></a>
+        </div>
         
     </div>
 </div>
