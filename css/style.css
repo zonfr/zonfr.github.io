@@ -1,5 +1,10 @@
 a{color: inherit;}
-body{background-color: #191919; max-width: 100%; overflow-x: hidden;}
+body{
+/* background-color: #191919; */
+max-width: 100%;
+overflow-x: hidden;
+background-image: url("https://i.ibb.co/PZBw4cw/banniere-itchio.png");
+background-repeat: repeat;}
 
 #about-button{
     position: fixed;
