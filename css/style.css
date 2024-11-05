@@ -5,7 +5,6 @@ max-width: 100%;
 overflow-x: hidden;
 background-image: url("https://i.ibb.co/PZBw4cw/banniere-itchio.png");
 background-repeat: repeat;}
-
 #about-button{
     position: fixed;
     bottom: 1%;
@@ -23,7 +22,7 @@ background-repeat: repeat;}
 
 .basic-text{
     font-size: 18px;
-    font-family:"Lato";
+	font-family: "Lato", Georgia, sans-serif;
     color:white;
 }
 
