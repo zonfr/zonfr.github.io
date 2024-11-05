@@ -68,7 +68,7 @@ background-repeat: repeat;}
     width: 100px;
     color: #D8D8D8;
     background-color: black;
-    font-family:"Lato";
+    font-family:"Lato", Georgia, sans-serif;;
 }
 
 .game-card{
@@ -157,7 +157,7 @@ background-repeat: repeat;}
 }
 
 .normal-text{
-    font-family:"Lato";
+    font-family:"Lato", Georgia, sans-serif;;
 }
 
 .desc-text{
@@ -166,7 +166,7 @@ background-repeat: repeat;}
     width: 70%;
     height: 15%;
     font-size: 18px;
-    font-family:"Lato";
+    font-family:"Lato", Georgia, sans-serif;;
     color: #D8D8D8;
     margin: auto;
 }
@@ -199,12 +199,12 @@ background-repeat: repeat;}
 
 #about-text{
     font-size: 18px;
-    font-family:"Lato";
+    font-family:"Lato", Georgia, sans-serif;;
     color:white;
 }
 
 #error-text{
-    font-family:"Lato";
+    font-family:"Lato", Georgia, sans-serif;;
     text-align: center;
     color: #CE1E27;
 }
