@@ -3,7 +3,7 @@ body{
 /* background-color: #191919; */
 max-width: 100%;
 overflow-x: hidden;
-background-image: url("https://i.ibb.co/PZBw4cw/banniere-itchio.png");
+background-image: url("../src/img/banniere_itchio.png");
 background-repeat: repeat;}
 #about-button{
     position: fixed;
@@ -130,7 +130,7 @@ background-repeat: repeat;}
 }
 
 #firestage-page{
-    background-image: url("https://i.ibb.co/mbPz4mN/background-firestage.png");
+    /* background-image: url("https://i.ibb.co/mbPz4mN/background-firestage.png"); */
     background-repeat: repeat;
     height: 1000px; 
 }

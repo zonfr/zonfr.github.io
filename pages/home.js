@@ -6,19 +6,19 @@
     </div>
     <div id="game-card-container">
         <div class="game-card">
-            <img class="img-card" src="https://i.ibb.co/vD3zdTH/logo-full-res-centered-v1.png"></img>
+            <img class="img-card" src="src/img/logo_full_res_centered_v1.png"></img>
             <button value="/elumin" class="redirect-button card-button" onclick="route(), topFunction()">ELUMIN</button>
         </div>
         <div class="game-card">
-            <img class="img-card" src="https://i.ibb.co/ZM5Rs8f/icon-firestage.png"></img>
+            <img class="img-card" src="src/img/icon_firestage.png"></img> 
             <button value="/firestage" class="redirect-button card-button" onclick="route(), topFunction()">FIRESTAGE</button>
         </div>
         <div class="game-card">
-            <img class="img-card" src="https://i.ibb.co/DL7TqXn/Unknown-pdp.png"></img>
+            <img class="img-card" src="src/img/Unknown-pdp.png"></img>
             <button value="/showreel-2024" class="redirect-button card-button" onclick="route(), topFunction()">SHOWREEL</button>
         </div>
         <div class="game-card">
-            <img class="img-card" src="https://i.ibb.co/0Z09qqP/zonfrlaser-itch.png"></img>
+            <img class="img-card" src="src/img/zonfrlaser_itch.png"></img>
             <a href="https://zonfr.itch.io/" target="_blank" class="redirect-button card-link"><p style="position:relative;top:30%;">ITCH.IO</p></a>
         </div>
         
