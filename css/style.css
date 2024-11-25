@@ -10,7 +10,10 @@ background-repeat: repeat;}
     bottom: 1%;
     left: 1%;
     width: 100px;
+    height: 40px;
     font-size: 20px;
+    border: 2px solid rgb(59, 59, 59);
+    border-radius: 10px;
 }
 
 #home-text{
@@ -39,7 +42,7 @@ background-repeat: repeat;}
 
 #game-card-container {
     margin: auto;
-    margin-top: 7%;
+    margin-top: 18%;
     display: grid;
     grid-template-columns: 25.5% 25.5% 25.5% 25.5%;
     /* background-color: #CE1E27; */
