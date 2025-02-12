@@ -32,13 +32,13 @@ background-repeat: repeat;}
 #home-icon{
     width: 200px;
     height: auto;
-    position:relative;
+    /* position:relative; */
     border-radius: 50px;
-    display: flex;
-    margin: auto;
-    /* position:absolute; */
-    /* margin-left: 12%; */
-    /* margin-top: 8%; */
+    /* display: flex;
+    margin: auto; */
+    position:absolute;
+    margin-left: 12%;
+     margin-top: 8%;
     border: none;
 }
 
@@ -52,6 +52,7 @@ background-repeat: repeat;}
 
 #home-page{
     position: relative;
+    margin-top: 7%;
     width: 100%;
     text-align: center;
 }
@@ -130,7 +131,7 @@ background-repeat: repeat;}
 
 #elumin-page{
     position: relative;
-    margin-top: 14%;
+    margin-top: 18%;
     width: 100%;
     background-image: url("https://i.ibb.co/23dLdgwx/background-fade-elumin.png"); 
     background-size: 500px;
@@ -153,6 +154,7 @@ background-repeat: repeat;}
     color: #b61111;
     margin-left: 6%;
     font-size: 90px;
+    font-weight: 250;
 }
 
 .title-img{
