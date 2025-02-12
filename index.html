@@ -5,18 +5,73 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/x-icon" href="/src/img/favicon.png">
-        <link href="css/style.css" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-        <script src="js/router.js"></script>
+        <link href="css/style.css" rel="stylesheet"/>
+        <!-- <script src="js/router.js"></script> -->
         <script src="js/script.js"></script>
         <title>ZonfrPress</title>
     </head>
     <body>
+        
         <div id="root">
             <!-- <button value="/" id="home-button" class="redirect-button" onclick="route()">:)</button> -->
-            <div id="main-page"></div>
-            <button value="/about" id="about-button" class="redirect-button" onclick="route(), topFunction()">About</button>
-            <input type="image" value="/" id="home-button" onclick="route(), topFunction()" src="src/img/zonfr_logo.png"/>
+            <div id="home-page">
+            <!-- <button value="/about" id="about-button" class="redirect-button" onclick="route(), topFunction()">About</button> -->
+            <!-- <input type="image" value="/" id="home-button" onclick="route(), topFunction()" src="src/img/zonfr_logo.png"/> -->
+
+                <img id="home-button" src="src/img/zonfr_logo.png"/>
+                <div class="text-section">
+                    <!-- <h1 id="welcome-title" class="normal-text">zonfr</h1> -->
+                    <p class="basic-text welcome-text">I'm a french game developer,</p>
+                    <p class="basic-text welcome-text">here are some of things I've made :</p>
+                </div>
+            </div>
+            <div id="elumin-page">
+                <img id="elumin-logo" src="src\img\elumin_title.png"/>
+                <p class="desc-text basic-text">Elumin is an exploration game in an energy plant on an isolated isle, you&#x27;re a mechanical engineer, your job is to do maintenance all around the site. When you arrive the 14 people team you&#x27;re supposed to find is nowhere to be found. The energy production sector can&#x27;t be turned off due to an unknown issue. From now on you&#x27;re the only one in charge of keeping operations stable. In the mean time, exploring the site will grant you answers on what happened and why.</p>
+                <section id="preview" class="screenshot-container">
+                    <a class="image-trigger" href="src\img\screenshot1.jpg">
+                        <img class="screenshot-img" src="src\img\screenshot1.jpg"></img>
+                    </a>
+                    <a class="image-trigger" href="src\img\screenshot2.jpg">
+                        <img class="screenshot-img" src="src\img\screenshot2.jpg"></img>
+                    </a>
+                    <a class="image-trigger" href="src\img\screenshot3.jpg">
+                        <img class="screenshot-img" src="src\img\screenshot3.jpg"></img>
+                    </a>
+                    <a class="image-trigger" href="src\img\screenshot4.jpg">
+                        <img class="screenshot-img" src="src\img\screenshot4.jpg"></img>
+                    </a>
+                </section>
+                <p><iframe src="https://store.steampowered.com/widget/2684580/" frameborder="0" class="widget-steam"></iframe></p>
+            </div>
+            <div id="showreel-page">
+                <h1 class="normal-text work-title">FLASHREEL</h1>
+                <p class="desc-text basic-text">Some of the stuff I made for the past 7 years, I only included not horrible looking stuff since I wanted it to be short and only with the best content.</p>
+                <p class="desc-text basic-text">Originally it was a showreel but due to me wanting to put my own weird "music" I had far less time to work with so now it's a flashreel.</p>
+                <div>
+                    <iframe class="video-player" src="https://www.youtube.com/embed/2lSL_v_0pnc?rel=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
         </div>
+        <script src="js/views/dist/views.min.js"></script>
+        <script>
+            var views = [],
+                triggers = document.querySelectorAll('.image-trigger');
+            [].forEach.call(triggers, function(element, index) {
+                views[index] = new Views(element, {
+                    defaultTheme: true,
+                    prefix: 'light',
+                    loader: 'Loading...',
+                    anywhereToClose: true,
+                    openAnimationDuration: 0,
+                    closeAnimationDuration: 0
+                });
+            });
+        </script>
     </body>
 </html>

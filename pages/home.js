@@ -1,8 +1,8 @@
 <div id="welcome-container">
     <div id="home-text">
-    <!-- <h1 id="welcome-title" class="normal-text">HEY, WELCOME</h1>
+        <h1 id="welcome-title" class="normal-text">HEY, WELCOME</h1>
         <p class="basic-text">I'M A FRENCH SOLO GAME DEVELOPER</p>
-        <p class="basic-text">HERE ARE SOME OF THE THINGS I'VE MADE :</p> --!>
+        <p class="basic-text">HERE ARE SOME OF THE THINGS I'VE MADE :</p>
     </div>
     <div id="game-card-container">
         <div class="game-card">
