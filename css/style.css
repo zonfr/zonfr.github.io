@@ -141,8 +141,8 @@ to {
 }
 
 .widget-steam{
-    transform: scale(70%);
-    width: 140%;
+    transform: scale(60%);
+    width: 165%;
     height: 290%;
     -moz-transform-origin: 0 0;
     display: flex;
@@ -181,7 +181,7 @@ to {
     text-align: center;
     color: #b61111;
     /* margin-left: 6%; */
-    font-size: 450%;
+    font-size: 425%;
     font-weight: 700;
 }
 
