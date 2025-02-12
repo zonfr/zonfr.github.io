@@ -274,9 +274,8 @@ to {
     /* background-color: #00000073; */
 }
 
-#language-img{
-    width: 80px;
-    height: 60px;
+.language-img{
+    image-rendering: pixelated;
 }
 
 @media only screen and (min-width: 768px) {
