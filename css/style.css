@@ -15,10 +15,37 @@ background-repeat: repeat;}
     /* margin-top: 5%; */
 }
 
+#home-icon{
+    height: 50%;
+    border-radius: 50px;
+    margin-top: 100px;
+    margin-left: 125px;
+    position:absolute;
+}
+
 #cmd-prompt{
-    width: 35%;
-    margin-top: 4%;
+    height: 50%;
+    margin-top: 75px;
     filter: drop-shadow(2px 2px 1px);
+}
+
+#cmd-blink-bar{
+    height: 0.5%;
+    margin-top: 259px;
+    margin-left: -340px;
+    position: absolute;
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+@-webkit-keyframes blink-animation {
+to {
+    visibility: hidden;
+}
 }
 
 .basic-text{
@@ -27,19 +54,6 @@ background-repeat: repeat;}
     font-weight: 300;
     font-size: 20px;
     color:white;
-}
-
-#home-icon{
-    width: 200px;
-    height: auto;
-    /* position:relative; */
-    border-radius: 50px;
-    /* display: flex;
-    margin: auto; */
-    position:absolute;
-    margin-left: 12%;
-     margin-top: 8%;
-    border: none;
 }
 
 #game-card-container {
@@ -52,7 +66,7 @@ background-repeat: repeat;}
 
 #home-page{
     position: relative;
-    margin-top: 7%;
+    margin-top: 50%;
     width: 100%;
     text-align: center;
 }
@@ -61,10 +75,11 @@ background-repeat: repeat;}
     position: absolute;
     margin-top: 1%;
     margin-left: 8%;
-    width: 59.5%;
-    height: 70%;
+    width: 83%;
+    height: 20%;
     border: solid #0000004f;
 }
+
 .redirect-button{
     border: none;
     text-align: center;
@@ -115,13 +130,25 @@ background-repeat: repeat;}
 
 }
 
-.widget-steam{
-    width: 50%;
-    height: 190px;
-    padding-top: 3%;
-    margin-left: 8%;
+.widget-wrapper{
+    width: 90%;
+    height: 14%;
+    padding: 0;
+    overflow: hidden;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 50px;
 }
 
+.widget-steam{
+    transform: scale(70%);
+    width: 140%;
+    height: 290%;
+    -moz-transform-origin: 0 0;
+    display: flex;
+    margin: auto;
+    overflow: hidden;
+}
 
 .img-card{
     height: 80%;
@@ -131,7 +158,7 @@ background-repeat: repeat;}
 
 #elumin-page{
     position: relative;
-    margin-top: 18%;
+    margin-top: 80%;
     width: 100%;
     background-image: url("https://i.ibb.co/23dLdgwx/background-fade-elumin.png"); 
     background-size: 500px;
@@ -151,10 +178,11 @@ background-repeat: repeat;}
 }
 
 .work-title{
+    text-align: center;
     color: #b61111;
-    margin-left: 6%;
-    font-size: 90px;
-    font-weight: 250;
+    /* margin-left: 6%; */
+    font-size: 450%;
+    font-weight: 700;
 }
 
 .title-img{
@@ -162,7 +190,7 @@ background-repeat: repeat;}
 }
 
 #elumin-logo{
-    width: 30%;
+    width: 90%;
     margin-left: 5%;
     display: flex;
 }
@@ -174,7 +202,7 @@ background-repeat: repeat;}
 .desc-text{
     text-align: justify;
     position: relative;
-    width: 90%;
+    width: 83%;
     font-size: 18px;
     margin-left: 8%;
     font-family:"Lato", Georgia, sans-serif;;
@@ -182,6 +210,8 @@ background-repeat: repeat;}
 }
 
 .end-text{
+    padding-top: 3%;
+    padding-bottom: 1%;
     width: 70%;
     font-size: 18px;
     margin: auto;
@@ -194,9 +224,10 @@ background-repeat: repeat;}
 .screenshot-container{
     display: grid;
     /* background-color: #CE1E27; */
-    grid-template-columns: 26.9% 26.9% 26.9% 26.9%;
-    grid-template-rows: 20% 20%;
-    column-gap: 50px;
+    grid-template-columns: 66% 66%;
+    grid-template-rows: 66% 66%;
+    column-gap: 20px;
+    row-gap: 20px;
     width: 60%;
     padding-top: 3%;
     margin-left: 8%;
@@ -232,8 +263,8 @@ background-repeat: repeat;}
 
 #language-button{
     position: fixed;
-    top: 1%;
-    right: 1%;
+    top: 5px;
+    right: 10px;
     width: 70px;
     height: 60px;
     cursor: pointer;
@@ -248,8 +279,90 @@ background-repeat: repeat;}
     height: 60px;
 }
 
-#error-text{
-    font-family:"Lato", Georgia, sans-serif;;
-    text-align: center;
-    color: #CE1E27;
+@media only screen and (min-width: 768px) {
+    
+    #cmd-prompt{
+        width: 35%;
+    }
+    
+    #home-page{
+        position: relative;
+        margin-top: 10%;
+        width: 100%;
+        text-align: center;
+    }
+    .widget-wrapper{
+        width: 600px;
+        height: 250px;
+        display: flex;
+        margin: auto;
+        margin-left: 8%;
+        overflow: hidden;
+    }
+    .widget-steam{
+        transform: scale(100%);
+        width: 700px;
+        height: 190px;
+        padding-top: 3%;
+    }
+    #home-icon{
+        width: 15%;
+        height: auto;
+        border-radius: 50px;
+        margin-top: 90px;
+        margin-left: 10%;
+        position:absolute;
+        border: none;
+    }
+    #cmd-blink-bar{
+        width: 0.5%;
+        display: flex;
+        margin-left: 34%;
+        margin-top: -1.05%;
+        animation: blink-animation 1s steps(5, start) infinite;
+        -webkit-animation: blink-animation 1s steps(5, start) infinite;
+    }
+    #elumin-logo{
+        width: 30%;
+        margin-left: 5%;
+        display: flex;
+    }
+
+    .screenshot-container{
+        display: grid;
+        /* background-color: #CE1E27; */
+        grid-template-columns: 26.9% 26.9% 26.9% 26.9%;
+        grid-template-rows: 20% 20%;
+        column-gap: 50px;
+        width: 60%;
+        padding-top: 3%;
+        margin-left: 8%;
+    }
+    
+    .video-player{
+        position: absolute;
+        margin-top: 1%;
+        margin-left: 8%;
+        width: 59.5%;
+        height: 600px;
+        border: solid #0000004f;
+    }
+
+    .work-title{
+        text-align: left;
+        color: #b61111;
+        margin-left: 6%;
+        font-size: 600%;
+        font-weight: 700;
+    }
+    
+    #elumin-page{
+        position: relative;
+        margin-top: 18%;
+        width: 100%;
+        background-image: url("https://i.ibb.co/23dLdgwx/background-fade-elumin.png"); 
+        background-size: 400px;
+        background-repeat: repeat;
+        height: 800px;
+    }
 }
