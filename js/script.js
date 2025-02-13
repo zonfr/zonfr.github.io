@@ -56,13 +56,16 @@ function loadPage(){
   switchLanguage('en');
 
   setTimeout(function(){
-    addMessage(false, "Hey welcome to my site");
+    addMessage(false, "Hey welcome to my site", true);
+    addMessage(false, "Hey bienvenue sur mon site", false);
   }, 1000);
   setTimeout(function(){
-    addMessage(false, "I'm a french game developer");
+    addMessage(false, "I'm a french game developer", true);
+    addMessage(false, "Je suis un développeur français", false);
   }, 3000);
   setTimeout(function(){
-    addMessage(false, "Scroll down to explore the things I've made :");
+    addMessage(false, "Scroll down to explore the things I've made :", true);
+    addMessage(false, "Défiler vers le bas pour voir mes productions :", false);
   }, 6000);
 
   document.addEventListener('keydown', function(evt) {
@@ -105,7 +108,6 @@ function typeText(chr){
   }
   messageTyped += chr;
   const element = document.querySelector('#cmd-blink-bar');
-  // element.style.marginLeft = (-340 + messageTyped.length * 4.98).toString() + 'px';
   element.style.visibility = "hidden";
   document.getElementById('input-box').innerHTML = messageTyped + "_";
 }
@@ -113,7 +115,6 @@ function typeText(chr){
 function eraseText(){
   messageTyped = messageTyped.substring(0, messageTyped.length-1);
   const element = document.querySelector('#cmd-blink-bar');
-  // element.style.marginLeft = (-340 + messageTyped.length * 4.98).toString() + 'px';
   document.getElementById('input-box').innerHTML = messageTyped + "_";
   if (messageTyped == ""){
     document.getElementById('input-box').innerHTML = "";
@@ -122,16 +123,23 @@ function eraseText(){
   }
 }
 
-function addMessage(visitor, mes){
+function addMessage(visitor, mes, lang){
   //Push new message
   if (visitor){
     messages.unshift("<p lang='en' class='cmd-msg'> Visitor : " + mes + "</p>");
+    messages.unshift("<p lang='fr' class='cmd-msg'> Visiteur : " + mes + "</p>");
   }else{
-    messages.unshift("<p lang='en' class='cmd-msg'> Zonfr : " + mes + "</p>");
+    if (lang){
+      messages.unshift("<p lang='en' class='cmd-msg'> Zonfr : " + mes + "</p>");
+    }else{
+      messages.unshift("<p lang='fr' class='cmd-msg'> Zonfr : " + mes + "</p>");
+    }
   }
 
   //Clear Message out of bounds
-  if (messages.length > 8){
+  console.log(messages.length);
+  if (messages.length > 16){
+    messages.pop();
     messages.pop();
   }
 
