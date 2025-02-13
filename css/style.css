@@ -33,10 +33,49 @@ background-repeat: repeat;}
     height: 0.5%;
     margin-top: 259px;
     margin-left: -340px;
+    visibility: visible;
     position: absolute;
     animation: blink-animation 1s steps(5, start) infinite;
     -webkit-animation: blink-animation 1s steps(5, start) infinite;
 }
+
+#message-box{
+    z-index: 2;
+    height: 100%;
+    margin-left: -205px;
+}
+
+.cmd-msg{
+    z-index: 2;
+    height: 3%;
+    position: relative;
+    margin-bottom: 4px;
+    margin-top: -36px;
+    color: white;
+    font-family: 'MS PGothic', Courier;
+    font-size: 70%;
+
+    width: 100%;
+    text-align: left;
+    margin-left:-65px;
+    left: 50%;
+}
+
+#input-box{
+    z-index: 2;
+    height: 3%;
+    position: relative;
+    margin-top: 14px;
+    color: white;
+    font-family: 'MS PGothic', Courier;
+    font-size: 70%;
+
+    width: 100%;
+    text-align: left;
+    margin-left:-162px;
+    left: 50%;
+}
+
 @keyframes blink-animation {
     to {
       visibility: hidden;
@@ -232,10 +271,6 @@ to {
     margin-left: 8%;
 }
 
-.image-trigger{
-    /* height: 10%; */
-}
-
 .screenshot-img{
     width: 100%;
     display: flex;
@@ -286,6 +321,43 @@ to {
     #cmd-prompt{
         width: 35%;
     }
+    #message-box{
+        z-index: 2;
+        width: 100%;
+        position: absolute;
+        margin-left: 0px;
+    }
+    .cmd-msg{
+        z-index: 2;
+        height: 3%;
+        position: relative;
+        margin-bottom: 0.5%;
+        margin-top: -3.1%;
+        color: white;
+        font-family: 'MS PGothic', Courier;
+        font-size: 1vw;
+    
+        width: 100%;
+        text-align: left;
+        margin-left:33.5%;
+        left: 0px; 
+    }
+    
+    #input-box{
+        z-index: 2;
+        height: 3%;
+        position: relative;
+        margin-bottom: 0.5%;
+        margin-top: -2.0%;
+        color: white;
+        font-family: 'MS PGothic', Courier;
+        font-size: 1vw;
+    
+        width: 100%;
+        text-align: left;
+        margin-left:34%;
+        left: 0px; 
+    }
     
     #home-page{
         position: relative;
@@ -324,6 +396,7 @@ to {
         animation: blink-animation 1s steps(5, start) infinite;
         -webkit-animation: blink-animation 1s steps(5, start) infinite;
     }
+
     #elumin-logo{
         width: 30%;
         margin-left: 5%;

@@ -14,17 +14,21 @@
         <script src="js/script.js"></script>
         <title>ZonfrPress</title>
     </head>
-    <body onload="switchLanguage('en')"> 
+    <body onload="loadPage()"> 
         <div id="root">
             <div id="home-page">
-                <img id="home-icon" src="src/img/zonfr_logo.png"/>
+                <!-- <img id="home-icon" src="src/img/zonfr_logo.png"/> -->
                 <img id="cmd-prompt" src="src/img/cmd_prompt_pres_back.svg"/>
                 <img id="cmd-blink-bar" src="src/img/blink_bar.svg"/>
-                
-                <!-- <div class="text-section">
-                    <p class="basic-text welcome-text">I'm a french game developer,</p>
-                    <p class="basic-text welcome-text">here are some of things I've made :</p>
-                </div> -->
+                <div id="message-box">
+                    <!-- <p lang="en" class="cmd-msg">Zonfr : Scroll down to explore the things I've made :</p>
+                    <p lang="en" class="cmd-msg">Zonfr : I'm a french game developer</p>
+                    <p lang="en" class="cmd-msg">Zonfr : Hey welcome to my site</p> -->
+                    <!-- <img class="cmd-msg" id="msg-3" src="src/img/cmd_msg_1.svg"/>
+                    <img class="cmd-msg" id="msg-2" src="src/img/cmd_msg_2.svg"/>
+                    <img class="cmd-msg" id="msg-1" src="src/img/cmd_msg_3.svg"/> -->
+                </div>
+                <p id="input-box"></p>
             </div>
             <div id="elumin-page">
                 <img id="elumin-logo" src="src\img\elumin_title.png"/>
