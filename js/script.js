@@ -20,7 +20,7 @@
 // }
 
 let lang_select = true;
-const messages = [];
+let messages = [];
 let messageTyped = "";
 
 function topFunction() {
@@ -72,13 +72,25 @@ function loadPage(){
     }
     if (evt.code == "Space"){
       evt.preventDefault();
-      // topFunction();
     }
 
     if (evt.code == "Enter" || evt.code == "NumpadEnter"){
+      
+      //Clear Command
+      if (messageTyped == "clear" || messageTyped == "clr"){
+        messages = [];
+        document.getElementById('message-box').innerHTML = "";
+        document.getElementById('input-box').innerHTML = "";
+        messageTyped = "";
+        return;
+      }
+
       addMessage(true, messageTyped);
+
       messageTyped = "";
+
       document.getElementById('input-box').innerHTML = "";
+
       const element = document.querySelector('#cmd-blink-bar');
       element.style.visibility = "visible";
     }else{
@@ -97,6 +109,7 @@ function typeText(chr){
   element.style.visibility = "hidden";
   document.getElementById('input-box').innerHTML = messageTyped + "_";
 }
+
 function eraseText(){
   messageTyped = messageTyped.substring(0, messageTyped.length-1);
   const element = document.querySelector('#cmd-blink-bar');
@@ -120,15 +133,6 @@ function addMessage(visitor, mes){
   //Clear Message out of bounds
   if (messages.length > 8){
     messages.pop();
-  }
-  
-  //Clear Command
-  if (mes == "clear" || mes == "clr"){
-    for (let i = 0; i < messages.length; i++){
-      messages.pop();
-    }
-    document.getElementById('message-box').innerHTML = "";
-    return;
   }
 
   //Displays Infos

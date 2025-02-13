@@ -4,9 +4,11 @@ body{
 /* width: 110%; */
 margin-left: 0%;
 margin-right: 0%;
+max-width: 100%;
 overflow-x: hidden;
 background-image: url("../src/img/banniere_itchio.png");
-background-repeat: repeat;}
+background-repeat: repeat;
+z-index: -100;}
 
 
 /* @font-face { font-family: 'MS PGothic'; src: local('MS PGothic'); } */
@@ -55,8 +57,9 @@ background-repeat: repeat;}
     margin-bottom: 4px;
     margin-top: -36px;
     color: white;
+    color: #D8D8D8;
     font-family: 'Lato', 'cursive';
-    font-weight: 100;
+    font-weight: 300;
     font-size: 70%;
 
     width: 100%;
@@ -68,11 +71,11 @@ background-repeat: repeat;}
 #input-box{
     z-index: 2;
     height: 3%;
-    position: relative;
+    position: absolute;
     margin-top: 14px;
     color: white;
     font-family: 'Lato', 'cursive';
-    font-weight: 100;
+    font-weight: 300;
     font-size: 70%;
 
     width: 100%;
@@ -115,12 +118,20 @@ to {
     text-align: center;
 }
 
+.video-wrapper{
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 8%;
+    width: 83%;
+    height: 25%;
+}
+
 .video-player{
     position: absolute;
     margin-top: 1%;
     margin-left: 8%;
     width: 83%;
-    height: 20%;
+    height: 100%;
     border: solid #0000004f;
 }
 
@@ -223,9 +234,24 @@ to {
 .work-title{
     text-align: center;
     color: #b61111;
-    /* margin-left: 6%; */
+    font-family: "Quicksand", serif;
+    font-weight: 100;
     font-size: 425%;
     font-weight: 700;
+}
+
+.work-title-aura{
+    position: absolute;
+    margin-top: auto;
+    margin-left: 50%;
+    left: -185px;
+    text-align: center;
+    color: #b61111;
+    font-family: "Quicksand", serif;
+    font-weight: 100;
+    font-size: 425%;
+    font-weight: 700;
+    filter: blur(5px);
 }
 
 .title-img{
@@ -239,7 +265,7 @@ to {
 }
 
 .normal-text{
-    font-family:"Lato", Georgia, sans-serif;;
+    font-family:"Lato", Georgia, sans-serif;
 }
 
 .desc-text{
@@ -336,25 +362,25 @@ to {
         color: white;
         /* font-family: 'MS PGothic', Courier; */
         font-family: 'Lato', 'cursive';
-        font-weight: 100;
+        font-weight: 300;
         font-size: 1vw;
     
         width: 100%;
         text-align: left;
         margin-left:33.5%;
-        left: 0px; 
+        left: 0px;
     }
     
     #input-box{
         z-index: 2;
         height: 3%;
-        position: relative;
+        position: absolute;
         margin-bottom: 0.5%;
         margin-top: -2.0%;
         color: white;
         /* font-family: 'MS PGothic', Courier; */
         font-family: 'Lato', 'cursive';
-        font-weight: 100;
+        font-weight: 300;
         font-size: 1vw;
     
         width: 100%;
@@ -430,9 +456,24 @@ to {
     .work-title{
         text-align: left;
         color: #b61111;
+        font-family: "Quicksand", serif;
+        font-weight: 500;
         margin-left: 6%;
-        font-size: 600%;
+        font-size: 100px;
         font-weight: 700;
+    }
+
+    .work-title-aura{
+        position: absolute;
+        margin-top: auto;
+        margin-left: 6%;
+        left: 0px;
+        text-align: left;
+        color: #b61111;
+        font-family: "Quicksand", serif;
+        font-size: 100px;
+        font-weight: 700;
+        filter: blur(5px);
     }
     
     #elumin-page{
