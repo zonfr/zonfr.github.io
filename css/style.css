@@ -9,7 +9,7 @@ background-image: url("../src/img/banniere_itchio.png");
 background-repeat: repeat;}
 
 
-@font-face { font-family: 'MS PGothic'; src: local('MS PGothic'); }
+/* @font-face { font-family: 'MS PGothic'; src: local('MS PGothic'); } */
 
 #home-text{
     position: relative;
@@ -55,7 +55,8 @@ background-repeat: repeat;}
     margin-bottom: 4px;
     margin-top: -36px;
     color: white;
-    font-family: 'MS PGothic', Courier;
+    font-family: 'Lato', 'cursive';
+    font-weight: 100;
     font-size: 70%;
 
     width: 100%;
@@ -70,7 +71,8 @@ background-repeat: repeat;}
     position: relative;
     margin-top: 14px;
     color: white;
-    font-family: 'MS PGothic', Courier;
+    font-family: 'Lato', 'cursive';
+    font-weight: 100;
     font-size: 70%;
 
     width: 100%;
@@ -329,10 +331,12 @@ to {
         z-index: 2;
         height: 3%;
         position: relative;
-        margin-bottom: 0.5%;
-        margin-top: -3.1%;
+        margin-bottom: 0.8%;
+        margin-top: -3.4%;
         color: white;
-        font-family: 'MS PGothic', Courier;
+        /* font-family: 'MS PGothic', Courier; */
+        font-family: 'Lato', 'cursive';
+        font-weight: 100;
         font-size: 1vw;
     
         width: 100%;
@@ -348,7 +352,9 @@ to {
         margin-bottom: 0.5%;
         margin-top: -2.0%;
         color: white;
-        font-family: 'MS PGothic', Courier;
+        /* font-family: 'MS PGothic', Courier; */
+        font-family: 'Lato', 'cursive';
+        font-weight: 100;
         font-size: 1vw;
     
         width: 100%;
