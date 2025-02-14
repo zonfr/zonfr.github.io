@@ -19,38 +19,55 @@
     <body onload="loadPage()"> 
         <div id="root">
             <div id="home-page">
-                <!-- <img id="home-icon" src="src/img/zonfr_logo.png"/> -->
-                <img id="cmd-prompt" src="src/img/cmd_prompt_pres_back.svg"/>
+                <!-- <img lang="en" class="cmd-prompt" src="src/img/cmd_prompt_pres_back_en.svg"/> -->
+                <div lang="fr"><img id="cmd-prompt" src="src/img/cmd_prompt_pres_back_fr.svg"/></div>
+                <div lang="en"><img id="cmd-prompt" src="src/img/cmd_prompt_pres_back_en.svg"/></div>
+                
                 <img id="cmd-blink-bar" src="src/img/blink_bar.svg"/>
                 <div id="message-box">
-                    <!-- <p lang="en" class="cmd-msg">Zonfr : Scroll down to explore the things I've made :</p>
-                    <p lang="en" class="cmd-msg">Zonfr : I'm a french game developer</p>
-                    <p lang="en" class="cmd-msg">Zonfr : Hey welcome to my site</p> -->
-                    <!-- <img class="cmd-msg" id="msg-3" src="src/img/cmd_msg_1.svg"/>
-                    <img class="cmd-msg" id="msg-2" src="src/img/cmd_msg_2.svg"/>
-                    <img class="cmd-msg" id="msg-1" src="src/img/cmd_msg_3.svg"/> -->
                 </div>
                 <p id="input-box"></p>
             </div>
             <div id="elumin-page">
                 <img id="elumin-logo" src="src\img\elumin_title.png"/>
                 <p lang="en" class="desc-text basic-text" style="padding-top: 1%;">Elumin is an exploration game set in an energy plant on an isolated island. You play as a mechanical engineer, and your job is to perform maintenance across the site. When you arrive, the team of 14 people you're supposed to meet is nowhere to be found. The energy production sector can't be turned off due to an unknown issue. From now on, you're the only one in charge of keeping operations stable. In the meantime, exploring the site will provide you with answers about what happened on the island.</p>
+                <p lang="en" class="desc-text basic-text" style="padding-top: 1%;">Elumin is made with Godot Engine, I also use Blender, Krita, Inkscape, git, LMMS and Davinci Resolve to create assets.</p>
                 <p lang="fr" class="desc-text basic-text" style="padding-top: 1%;">Elumin est un jeu d'exploration dans une centrale énergétique sur une île isolée. Vous êtes un ingénieur, et votre mission consiste à effectuer de la maintenance à divers points du site. À votre arrivée, l'équipe de 14 personnes censée vous accueillir est introuvable, et la production énergétique est inarrêtable. À partir de ce moment, vous êtes responsable de la stabilité de cette dangereuse centrale. En attendant, explorer le site vous donnera des réponses sur ce qui s'est passé sur cette île.</p>
+                <p lang="fr" class="desc-text basic-text" style="padding-top: 1%;">Elumin est fait avec Godot Engine, j'utilise également Blender, Krita, Inkscape, git, LMMS et Davinci Resolve pour la création d'assets.</p>
                 <section id="preview" class="screenshot-container">
-                    <a class="image-trigger" href="src\img\screenshot1.jpg">
-                        <img class="screenshot-img" src="src\img\screenshot1_min.jpg"></img>
+                    <a class="image-trigger" href="src\img\elumin_screenshot1.jpg">
+                        <img class="screenshot-img" src="src\img\elumin_screenshot1_min.jpg"></img>
                     </a>
-                    <a class="image-trigger" href="src\img\screenshot2.jpg">
-                        <img class="screenshot-img" src="src\img\screenshot2_min.jpg"></img>
+                    <a class="image-trigger" href="src\img\elumin_screenshot2.jpg">
+                        <img class="screenshot-img" src="src\img\elumin_screenshot2_min.jpg"></img>
                     </a>
-                    <a class="image-trigger" href="src\img\screenshot3.jpg">
-                        <img class="screenshot-img" src="src\img\screenshot3_min.jpg"></img>
+                    <a class="image-trigger" href="src\img\elumin_screenshot3.jpg">
+                        <img class="screenshot-img" src="src\img\elumin_screenshot3_min.jpg"></img>
                     </a>
-                    <a class="image-trigger" href="src\img\screenshot4.jpg">
-                        <img class="screenshot-img" src="src\img\screenshot4_min.jpg"></img>
+                    <a class="image-trigger" href="src\img\elumin_screenshot4.jpg">
+                        <img class="screenshot-img" src="src\img\elumin_screenshot4_min.jpg"></img>
                     </a>
                 </section>
                 <div class="widget-wrapper"><iframe src="https://store.steampowered.com/widget/2684580/" frameborder="0" class="widget-steam"></iframe></div>
+            </div>
+            <div id="firestage-page">
+                <img id="firestage-logo" src="src\img\firestage_title.png"/>
+                <p lang="en" class="desc-text basic-text" style="padding-top: 1%;">Firestage is a small prototype of a video jockey game/application. It's not a technical marvel, but I like how it turned out.</p>
+                <p lang="fr" class="desc-text basic-text" style="padding-top: 1%;">Firestage est un petit prototype d'une application/jeu de vidéo jockey. Ce n'est pas une prouesse technique, mais j'aime bien le résultat.</p>
+                <section id="preview" class="screenshot-container">
+                    <a class="image-trigger" href="src\img\firestage_screenshot1.jpg">
+                        <img class="screenshot-img" src="src\img\firestage_screenshot1_min.jpg"></img>
+                    </a>
+                    <a class="image-trigger" href="src\img\firestage_screenshot2.jpg">
+                        <img class="screenshot-img" src="src\img\firestage_screenshot2_min.jpg"></img>
+                    </a>
+                    <a class="image-trigger" href="src\img\firestage_screenshot3.jpg">
+                        <img class="screenshot-img" src="src\img\firestage_screenshot3_min.jpg"></img>
+                    </a>
+                    <a class="image-trigger" href="src\img\firestage_screenshot4.jpg">
+                        <img class="screenshot-img" src="src\img\firestage_screenshot4_min.jpg"></img>
+                    </a>
+                </section>
             </div>
             <div id="showreel-page">
                 <h1 class="work-title-aura">FLASHREEL</h1>
@@ -71,6 +88,14 @@
                 <div>
                     <p lang="en" class="desc-text basic-text">My <a href="https://zonfr.itch.io/" class="basic-text"><u>Itch.io</u></a> with some Jam Games and prototypes.</p>
                     <p lang="fr" class="desc-text basic-text">Ma page <a href="https://zonfr.itch.io/" class="basic-text"><u>Itch.io</u></a>, où vous pourrez retrouver des jeux de jams et des prototypes.</p>
+                </div>
+            </div>
+            <div id="contact-page">
+                <h1 class="work-title-aura">CONTACT</h1>
+                <h1 class="work-title">CONTACT</h1>
+                <div>
+                    <p lang="en" class="desc-text basic-text">My email : <a href="mailto:jonas.amrouche@gmail.com">jonas.amrouche@gmail.com</a></p>
+                    <p lang="fr" class="desc-text basic-text">Mon mail : <a href="mailto:jonas.amrouche@gmail.com">jonas.amrouche@gmail.com</a></p>
                 </div>
             </div>
             

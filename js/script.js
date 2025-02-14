@@ -19,7 +19,7 @@
 //   modal.style.display = "none";
 // }
 
-let lang_select = true;
+let lang_select = false;
 let messages = [];
 let messageTyped = "";
 
@@ -61,15 +61,15 @@ function loadPage(){
   }, 1000);
   setTimeout(function(){
     addMessage(false, "I'm a french game developer", true);
-    addMessage(false, "Je suis un développeur français", false);
+    addMessage(false, "Je suis développeur de jeux vidéos", false);
   }, 2500);
   setTimeout(function(){
     addMessage(false, "Scroll down to explore the things I've made :", true);
     addMessage(false, "Défiler vers le bas pour voir mes productions :", false);
   }, 4000);
   setTimeout(function(){
-    addMessage(false, "Type help to see some commands", true);
-    addMessage(false, "Taper aled pour consulter les commandes", false);
+    addMessage(false, "Type 'help' to see some commands", true);
+    addMessage(false, "Taper 'aled' pour consulter les commandes", false);
   }, 16000);
 
   document.addEventListener('keydown', function(evt) {
@@ -89,6 +89,8 @@ function loadPage(){
         document.getElementById('message-box').innerHTML = "";
         document.getElementById('input-box').innerHTML = "";
         messageTyped = "";
+        const element = document.querySelector('#cmd-blink-bar');
+        element.style.visibility = "visible";
         return;
       }
 
@@ -96,14 +98,14 @@ function loadPage(){
         setTimeout(function(){
           addMessage(false, "You can download my <a href='src/docs/CV_Info_2025_EN.pdf' download='CV_Jonas_Amrouche_Zonfr_FRENCH'><u>here</u></a>", true);
           addMessage(false, "Vous pouvez telecharger mon cv juste <a href='src/docs/CV_Info_2025_FR.pdf' download='CV_Jonas_Amrouche_Zonfr_ENGLISH'><u>ici</u></a>", false);
-        }, 1000);
+        }, 500);
       }
 
       if (messageTyped == "help" || messageTyped == "aled"){
         setTimeout(function(){
-          addMessage(false, "Commands : cv, help, clear", true);
-          addMessage(false, "Commandes : cv, aled, effacer", false);
-        }, 1000);
+          addMessage(false, "[cv, help, clear]", true);
+          addMessage(false, "[cv, aled, effacer]", false);
+        }, 500);
       }
 
       addMessage(true, messageTyped);

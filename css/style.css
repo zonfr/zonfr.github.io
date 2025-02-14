@@ -225,13 +225,16 @@ to {
 }
 
 #firestage-page{
-    /* background-image: url("https://i.ibb.co/mbPz4mN/background-firestage.png"); */
+    margin-top: 10%;
+    position: relative;
+    width: 100%;
+    background-image: url("https://i.ibb.co/67dd6VzY/background-fade-firestage.png"); 
+    background-size: 300px;
     background-repeat: repeat;
-    height: 1000px; 
+    height: 700px;
 }
 
 #showreel-page{
-    margin-top: 5%;
     height: 900px; 
 }
 
@@ -247,9 +250,10 @@ to {
 .work-title-aura{
     position: absolute;
     margin-top: auto;
-    margin-left: 50%;
-    left: -185px;
+    margin-left: auto;
+    /* left: 50%; */
     text-align: center;
+    width: 100%;
     color: #b61111;
     font-family: "Quicksand", serif;
     font-weight: 100;
@@ -264,6 +268,13 @@ to {
 
 #elumin-logo{
     width: 90%;
+    margin-left: 5%;
+    display: flex;
+}
+
+#firestage-logo{
+    width: 90%;
+    transform: scale(150%);
     margin-left: 5%;
     display: flex;
 }
@@ -435,6 +446,12 @@ to {
     #elumin-logo{
         width: 30%;
         margin-left: 5%;
+        display: flex;
+    }
+    #firestage-logo{
+        width: 30%;
+        /* transform: scale(150%); */
+        margin-left: 1%;
         display: flex;
     }
 
