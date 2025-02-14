@@ -47,13 +47,13 @@ function switchLanguage(lang) {
       stylesheetUrl = 'css/fr.css';
       break;
     default:
-      stylesheetUrl = 'css/en.css';
+      stylesheetUrl = 'css/fr.css';
   }
    document.getElementById('languageStylesheet').setAttribute('href', stylesheetUrl);
   }
 
 function loadPage(){
-  switchLanguage('en');
+  switchLanguage('fr');
 
   setTimeout(function(){
     addMessage(false, "Hey welcome to my site", true);
@@ -62,11 +62,15 @@ function loadPage(){
   setTimeout(function(){
     addMessage(false, "I'm a french game developer", true);
     addMessage(false, "Je suis un développeur français", false);
-  }, 3000);
+  }, 2500);
   setTimeout(function(){
     addMessage(false, "Scroll down to explore the things I've made :", true);
     addMessage(false, "Défiler vers le bas pour voir mes productions :", false);
-  }, 6000);
+  }, 4000);
+  setTimeout(function(){
+    addMessage(false, "Type help to see some commands", true);
+    addMessage(false, "Taper aled pour consulter les commandes", false);
+  }, 16000);
 
   document.addEventListener('keydown', function(evt) {
     if (evt.code == "Backspace"){
@@ -80,12 +84,26 @@ function loadPage(){
     if (evt.code == "Enter" || evt.code == "NumpadEnter"){
       
       //Clear Command
-      if (messageTyped == "clear" || messageTyped == "clr"){
+      if (messageTyped == "clear" || messageTyped == "clr" || messageTyped == "effacer"){
         messages = [];
         document.getElementById('message-box').innerHTML = "";
         document.getElementById('input-box').innerHTML = "";
         messageTyped = "";
         return;
+      }
+
+      if (messageTyped == "cv"){
+        setTimeout(function(){
+          addMessage(false, "You can download my <a href='src/docs/CV_Info_2025_EN.pdf' download='CV_Jonas_Amrouche_Zonfr_FRENCH'><u>here</u></a>", true);
+          addMessage(false, "Vous pouvez telecharger mon cv juste <a href='src/docs/CV_Info_2025_FR.pdf' download='CV_Jonas_Amrouche_Zonfr_ENGLISH'><u>ici</u></a>", false);
+        }, 1000);
+      }
+
+      if (messageTyped == "help" || messageTyped == "aled"){
+        setTimeout(function(){
+          addMessage(false, "Commands : cv, help, clear", true);
+          addMessage(false, "Commandes : cv, aled, effacer", false);
+        }, 1000);
       }
 
       addMessage(true, messageTyped);
