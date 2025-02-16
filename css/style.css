@@ -224,6 +224,16 @@ to {
     height: 1000px;
 }
 
+#groups-page{
+    position: relative;
+    margin-top: 5%;
+    width: 100%;
+    background-image: url("https://i.ibb.co/5yw0RLQ/tilegrass.png"); 
+    background-size: 325px;
+    background-repeat: repeat;
+    height: 650px;
+}
+
 #firestage-page{
     margin-top: 10%;
     position: relative;
@@ -238,6 +248,10 @@ to {
     height: 900px; 
 }
 
+#itch-page{
+    margin-top: -50%;
+}
+
 .work-title{
     text-align: center;
     color: #b61111;
@@ -245,6 +259,14 @@ to {
     font-weight: 100;
     font-size: 425%;
     font-weight: 700;
+}
+
+#itch-title{
+    color: #FF244A;
+}
+
+#contact-title{
+    color: #d4d4d4;
 }
 
 .work-title-aura{
@@ -278,6 +300,36 @@ to {
     margin-left: 5%;
     display: flex;
 }
+
+#firestage-logo-aura{
+    width: 90%;
+    transform: scale(150%);
+    margin-left: 5%;
+    margin-top: 0%;
+    display: flex;
+    position: absolute;
+    filter: blur(6px);
+    opacity: 50%;
+}
+
+#groups-logo{
+    width: 70%;
+    transform: scale(150%);
+    margin-left: 15%;
+    display: flex;
+}
+
+#groups-logo-aura{
+    width: 70%;
+    transform: scale(150%);
+    margin-left: 15%;
+    margin-top: 0%;
+    display: flex;
+    position: absolute;
+    filter: blur(6px);
+    opacity: 50%;
+}
+
 
 .normal-text{
     font-family:"Lato", Georgia, sans-serif;
@@ -450,9 +502,29 @@ to {
     }
     #firestage-logo{
         width: 30%;
-        /* transform: scale(150%); */
         margin-left: 1%;
         display: flex;
+    }
+    #firestage-logo-aura{
+        width: 30%;
+        margin-left: 1%;
+        display: flex;
+        position: absolute;
+        filter: blur(4px);
+        opacity: 50%;
+    }
+    #groups-logo{
+        width: 25%;
+        margin-left: 5%;
+        display: flex;
+    }
+    
+    #groups-logo-aura{
+        width: 25%;
+        margin-left: 5%;
+        display: flex;
+        position: absolute;
+        filter: blur(4px);
     }
 
     .screenshot-container{
@@ -506,5 +578,8 @@ to {
         background-size: 400px;
         background-repeat: repeat;
         height: 800px;
+    }
+    #itch-page{
+        margin-top: 0%;
     }
 }
