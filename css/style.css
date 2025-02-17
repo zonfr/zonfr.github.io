@@ -254,6 +254,16 @@ to {
     height: 650px;
 }
 
+#backrooms-page{
+    position: relative;
+    margin-top: -0%;
+    width: 100%;
+    background-image: url("https://i.ibb.co/j9kJVhdx/background-fade-backrooms-v4.png"); 
+    background-size: 325px;
+    background-repeat: repeat;
+    height: 650px;
+}
+
 #showreel-page{
     height: 900px; 
 }
@@ -339,6 +349,17 @@ to {
     height: 50px;
     font-size: 15vw;
     font-style:italic;
+    filter: drop-shadow(0px 0px 5px #000000);
+}
+
+#backrooms-title{
+    color: #a18f25;
+    text-align: center;
+    font-family: "Major Mono Display", serif;
+    font-weight: 400;
+    margin-left: 0%;
+    height: 50px;
+    font-size: 13vw;
     filter: drop-shadow(0px 0px 5px #000000);
 }
 
@@ -549,6 +570,16 @@ to {
         filter: drop-shadow(0px 0px 5px #000000);
 
     }
+    #backrooms-title{
+        color: #a18f25;
+        text-align: left;
+        font-family: "Major Mono Display", serif;
+        font-weight: 400;
+        margin-left: 6%;
+        font-size: 5vw;
+        filter: drop-shadow(0px 0px 5px #000000);
+    }
+    
 
     .screenshot-container{
         display: grid;
