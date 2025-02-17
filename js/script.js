@@ -55,6 +55,9 @@ function loadPage(){
     if (evt.code == "Space"){
       evt.preventDefault();
     }
+    if (evt.code == "ShiftLeft" || evt.code == "ShiftRight" || evt.code == "ControlLeft" || evt.code == "ControlRight" || evt.code == "PageDown" || evt.code == "PageUp" || evt.code == "End" || evt.code == "Escape" || evt.code == "F1" || evt.code == "F2" || evt.code == "F3" || evt.code == "F4" || evt.code == "F5" || evt.code == "F6" || evt.code == "F7" || evt.code == "F8" || evt.code == "F9" || evt.code == "F10" || evt.code == "F11" || evt.code == "F12" || evt.code == "Tab" || evt.code == "AltLeft" || evt.code == "Delete" || evt.code == "AltRight" || evt.code == "CapsLock" || evt.code == "ArrowUp" || evt.code == "ArrowDown" || evt.code == "ArrowRight" || evt.code == "ArrowLeft"){
+      return;
+    }
 
     if (evt.code == "Enter" || evt.code == "NumpadEnter"){
       
@@ -72,8 +75,8 @@ function loadPage(){
       //CV Command
       if (messageTyped == "cv"){
         setTimeout(function(){
-          addMessage(false, "You can download my <a href='src/docs/CV_Info_2025_EN.pdf' download='CV_Jonas_Amrouche_Zonfr_FRENCH'><u>here</u></a>", langs.ENGLISH);
-          addMessage(false, "Vous pouvez telecharger mon cv juste <a href='src/docs/CV_Info_2025_FR.pdf' download='CV_Jonas_Amrouche_Zonfr_ENGLISH'><u>ici</u></a>", langs.FRENCH);
+          addMessage(false, "You can download my CV <a href='src/docs/CV_Info_2025_EN.pdf' download='CV_Jonas_Amrouche_Zonfr_FRENCH'><u>here</u></a>", langs.ENGLISH);
+          addMessage(false, "Vous pouvez telecharger mon CV juste <a href='src/docs/CV_Info_2025_FR.pdf' download='CV_Jonas_Amrouche_Zonfr_ENGLISH'><u>ici</u></a>", langs.FRENCH);
         }, 500);
       }
 
