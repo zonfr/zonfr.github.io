@@ -273,13 +273,14 @@ to {
     height: 650px;
 }
 
-#showreel-page{
+#flashreel-page{
     height: 900px; 
 }
 
 #itch-page{
     margin-top: -50%;
 }
+
 #contact-page{
     margin-top: 30%;
 }
@@ -287,7 +288,7 @@ to {
 .work-title{
     text-align: center;
     margin: auto;
-    width: 80%;
+    width: 90%;
     color: #b61111;
     font-family: "Quicksand", serif;
     font-weight: 100;
