@@ -145,7 +145,6 @@ to {
     height: 570px;
     margin: auto;
     margin-top: 5%;
-    background-color: #00000065;
 }
 
 .redirect-button{
@@ -288,7 +287,7 @@ to {
 .work-title{
     text-align: center;
     margin: auto;
-    width: 90%;
+    width: 100%;
     color: #b61111;
     font-family: "Quicksand", serif;
     font-weight: 100;
@@ -324,6 +323,10 @@ to {
 
 .title-img{
     width: 30%;
+}
+
+.mobile-only{
+    display: visible;
 }
 
 #elumin-logo{
@@ -501,8 +504,7 @@ to {
     width: 400px;
     height: 100px;
     border: solid #0000004f;
-    border-radius:rgba(0, 0, 0, 0.479)
-    
+    border-radius:rgba(0, 0, 0, 0.479);
 }
 
 #language-button{
@@ -702,9 +704,12 @@ to {
     }
     .cv-viewer{
         width: 40%;
-        height: 1000px;
+        height: auto;
         margin-left: 7%;
-        margin-top: 5%;
-        background-color: #00000065;
+        margin-top: 2%;
+    }
+    
+    .mobile-only{
+        display:none;
     }
 }
