@@ -75,8 +75,8 @@ function loadPage(){
       //CV Command
       if (messageTyped == "cv"){
         setTimeout(function(){
-          addMessage(false, "You can download my CV <a href='src/docs/CV_Info_2025_EN.pdf' download='CV_Jonas_Amrouche_Zonfr_FRENCH'><u>here</u></a>", langs.ENGLISH);
-          addMessage(false, "Vous pouvez telecharger mon CV juste <a href='src/docs/CV_Info_2025_FR.pdf' download='CV_Jonas_Amrouche_Zonfr_ENGLISH'><u>ici</u></a>", langs.FRENCH);
+          addMessage(false, "You can download my CV <a href='src/docs/CV_Info_2025_EN.pdf' download='CV_Jonas_Amrouche_Zonfr_ENGLISH'><u>here</u></a>", langs.ENGLISH);
+          addMessage(false, "Vous pouvez telecharger mon CV juste <a href='src/docs/CV_Info_2025_FR.pdf' download='CV_Jonas_Amrouche_Zonfr_FRENCH'><u>ici</u></a>", langs.FRENCH);
         }, 500);
       }
 
@@ -111,7 +111,7 @@ function loadPage(){
 }
 
 function typeText(chr){
-  if (messageTyped.length > 40){
+  if (messageTyped.length > 37){
     return
   }
   messageTyped += chr;

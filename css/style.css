@@ -35,7 +35,7 @@ z-index: -100;}
 #cmd-prompt{
     height: 50%;
     margin-top: 75px;
-    filter: drop-shadow(2px 2px 1px);
+    filter: drop-shadow(7px 7px 0px);
 }
 
 #cmd-blink-bar{
@@ -52,6 +52,7 @@ z-index: -100;}
     z-index: 2;
     height: 100%;
     margin-left: -205px;
+    filter: drop-shadow(7px 7px 1px);
 }
 
 .cmd-msg{
@@ -137,6 +138,14 @@ to {
     width: 83%;
     height: 100%;
     border: solid #0000004f;
+}
+
+.cv-viewer{
+    width: 90%;
+    height: 570px;
+    margin: auto;
+    margin-top: 5%;
+    background-color: #00000065;
 }
 
 .redirect-button{
@@ -248,7 +257,7 @@ to {
     position: relative;
     margin-top: -0%;
     width: 100%;
-    background-image: url("https://i.ibb.co/Y4yXPgxR/background-fade-metronim.png"); 
+    background-image: url("https://i.ibb.co/8gsvH047/background-fade-metronimv-2.png"); 
     background-size: 325px;
     background-repeat: repeat;
     height: 650px;
@@ -277,21 +286,38 @@ to {
 
 .work-title{
     text-align: center;
+    margin: auto;
+    width: 80%;
     color: #b61111;
     font-family: "Quicksand", serif;
     font-weight: 100;
     font-size: 425%;
     font-weight: 700;
     filter: drop-shadow(0px 0px 5px #b61111);
+    animation: glitch-glow 4s ease 0s infinite;
+}
+
+@keyframes glitch-glow {
+    0% {filter: drop-shadow(0px 0px 5px);}
+    10% {filter: drop-shadow(0px 0px 2px);}
+    20% {filter: drop-shadow(0px 0px 3px);}
+    20.5% {filter: drop-shadow(20px 0px 3px);}
+    21% {filter: drop-shadow(-20px 0px 3px);}
+    21.5% {filter: drop-shadow(0px 0px 3px);}
+    60% {filter: drop-shadow(0px 0px 5px);}
+    75% {filter: drop-shadow(0px 0px 3px);}
+    100% {filter: drop-shadow(0px 0px 5px);}
 }
 
 #itch-title{
     color: #FF244A;
+    animation-delay: 1.4s;
     filter: drop-shadow(0px 0px 5px #FF244A);
 }
 
 #contact-title{
     color: #d4d4d4;
+    animation-delay: 4.1s;
     filter: drop-shadow(0px 0px 5px #d4d4d4);
 }
 
@@ -303,6 +329,16 @@ to {
     width: 90%;
     margin-left: 5%;
     display: flex;
+    animation: glow-fade-elumin 8s ease 0s infinite;
+}
+
+@keyframes glow-fade-elumin {
+    0% {filter: drop-shadow(0px 5px 5px black);}
+    30% {filter: drop-shadow(-10px 5px 0px black);}
+    45% {filter: drop-shadow(0px 5px 3px #2debdb);}
+    60% {filter: drop-shadow(10px 5px 5px black);}
+    75% {filter: drop-shadow(0px 5px 3px black);}
+    100% {filter: drop-shadow(0px 5px 5px black);}
 }
 
 #firestage-logo{
@@ -310,6 +346,12 @@ to {
     transform: scale(150%);
     margin-left: 5%;
     display: flex;
+    animation: glow-fade-firestage 0.5s ease 0s infinite;
+}
+
+@keyframes glow-fade-firestage {
+    0% {filter: drop-shadow(0px 0px 7px #8729c5);}
+    50% {filter: drop-shadow(0px 0px 0px #8729c5);}
 }
 
 #firestage-logo-aura{
@@ -338,18 +380,31 @@ to {
     display: flex;
     position: absolute;
     filter: blur(6px);
+    animation: glow-fade-groups 2s ease 0s infinite;
+}
+
+@keyframes glow-fade-groups {
+    0% {opacity: 100%;}
+    50% {opacity: 20%;}
+    100% {opacity: 100%;}
 }
 
 #metronim-title{
     color: #917054;
     text-align: center;
     font-family: "Limelight", serif;
-    font-weight: 400;
+    font-weight: 800;
     margin-left: 0%;
     height: 50px;
     font-size: 15vw;
-    font-style:italic;
-    filter: drop-shadow(0px 0px 5px #000000);
+    filter: drop-shadow(10px 10px 0px black);
+    animation: glow-fade-metronim 6s ease 0s infinite;
+}
+
+@keyframes glow-fade-metronim {
+    0% {filter: drop-shadow(10px 10px 0px black);}
+    50% {filter: drop-shadow(-10px 10px 0px black);}
+    100% {filter: drop-shadow(10px 10px 0px black);}
 }
 
 #backrooms-title{
@@ -360,7 +415,28 @@ to {
     margin-left: 0%;
     height: 50px;
     font-size: 13vw;
-    filter: drop-shadow(0px 0px 5px #000000);
+    filter: drop-shadow(0px 0px 3px #ffee8b);
+    animation: glow-fade-backrooms 4s cubic-bezier(0.7, 0, 0.84, 0) 0s infinite;
+}
+
+@keyframes glow-fade-backrooms {
+    0% {filter: drop-shadow(0px 0px 0px);}
+    1% {filter: drop-shadow(0px 0px 0px);}
+    3% {filter: drop-shadow(0px 0px 5px);}
+    4% {filter: drop-shadow(0px 0px 0px);}
+    7% {filter: drop-shadow(0px 0px 0px);}
+    9% {filter: drop-shadow(0px 0px 5px);}
+    10% {filter: drop-shadow(0px 0px 0px);}
+    14% {filter: drop-shadow(0px 0px 0px);}
+    16% {filter: drop-shadow(0px 0px 5px);}
+    17% {filter: drop-shadow(0px 0px 0px);}
+    21% {filter: drop-shadow(0px 0px 0px);}
+    23% {filter: drop-shadow(0px 0px 5px);}
+    24% {filter: drop-shadow(0px 0px 0px);}
+    25% {filter: drop-shadow(0px 0px 0px);}
+    26% {filter: drop-shadow(0px 0px 5px);}
+    99% {filter: drop-shadow(0px 0px 5px);}
+    100% {filter: drop-shadow(0px 0px 0px);}
 }
 
 .normal-text{
@@ -561,25 +637,15 @@ to {
     }
     
     #metronim-title{
-        color: #917054;
         text-align: left;
-        font-family: "Limelight", serif;
-        font-weight: 400;
         margin-left: 6%;
         font-size: 5vw;
-        filter: drop-shadow(0px 0px 5px #000000);
-
     }
     #backrooms-title{
-        color: #a18f25;
         text-align: left;
-        font-family: "Major Mono Display", serif;
-        font-weight: 400;
         margin-left: 6%;
         font-size: 5vw;
-        filter: drop-shadow(0px 0px 5px #000000);
     }
-    
 
     .screenshot-container{
         display: grid;
@@ -632,5 +698,12 @@ to {
     }
     #contact-page{
         margin-top: 5%;
+    }
+    .cv-viewer{
+        width: 40%;
+        height: 1000px;
+        margin-left: 7%;
+        margin-top: 5%;
+        background-color: #00000065;
     }
 }
