@@ -145,6 +145,7 @@ to {
     height: 570px;
     margin: auto;
     margin-top: 5%;
+    border: 4px solid #00000023;
 }
 
 .redirect-button{
@@ -237,8 +238,8 @@ to {
     position: relative;
     width: 100%;
     background-image: url("https://i.ibb.co/fGGQmcLp/background-fade-firestage-v2.png"); 
-    background-size: 350px;
     background-repeat: repeat;
+    background-size: 350px;
     height: 800px;
 }
 
@@ -267,7 +268,7 @@ to {
     margin-top: -0%;
     width: 100%;
     background-image: url("https://i.ibb.co/j9kJVhdx/background-fade-backrooms-v4.png"); 
-    background-size: 325px;
+    background-size: 320px;
     background-repeat: repeat;
     height: 650px;
 }
@@ -282,6 +283,7 @@ to {
 
 #contact-page{
     margin-top: 30%;
+    margin-bottom: 5%;
 }
 
 .work-title{
@@ -466,7 +468,7 @@ to {
     display: flex;
     text-align: center;
     font-family:"Lato", Georgia, sans-serif;;
-    color: #D8D8D8;
+    color: #d8d8d879;
 }
 
 .screenshot-container{
@@ -691,16 +693,29 @@ to {
         height: 800px;
     }
     #firestage-page{
+        background-size: 400px;
+        height: 900px;
+        margin-top: 12%;
+    }
+    #groups-page{
+        background-size: 400px;
+        height: 800px;
+        margin-top: 10%;
+    }
+    #backrooms-page{
         margin-top: 10%;
     }
     #metronim-page{
-        margin-top: 0%;
+        margin-top: 10%;
+    }
+    #flashreel-page{
+        margin-top: 8%;
     }
     #itch-page{
-        margin-top: 0%;
+        margin-top: 6%;
     }
     #contact-page{
-        margin-top: 5%;
+        margin-top: 6%;
     }
     .cv-viewer{
         width: 40%;
