@@ -4,8 +4,6 @@ a{color: inherit;}
     overflow-x: hidden;
 }
 body{
-/* background-color: #191919; */
-/* width: 110%; */
 margin-left: 0%;
 margin-right: 0%;
 max-width: 100%;
@@ -14,14 +12,8 @@ background-image: url("../src/img/banniere_itchio.png");
 background-repeat: repeat;
 z-index: -100;}
 
-
-/* @font-face { font-family: 'MS PGothic'; src: local('MS PGothic'); } */
-
 #home-text{
     position: relative;
-    /* max-width: 50%; */
-    /* margin: auto; */
-    /* margin-top: 5%; */
 }
 
 #home-icon{
@@ -165,7 +157,6 @@ to {
     height: 150px;
     text-align: center;
     width: 150px;
-    /* filter: drop-shadow(2px 2px 1px); */
 }
 
 .card-button{
@@ -201,9 +192,6 @@ to {
 .widget-wrapper{
     width: 120%;
     height: 14%;
-    /* -moz-padding: 0;
-    -moz-overflow: hidden;
-    -moz-margin: auto; */
     display: flex;
     margin: auto;
     margin-left: -10%;
@@ -213,7 +201,6 @@ to {
     transform: scale(60%);
     width: 165%;
     height: 290%;
-    /* -moz-transform-origin: 50% 20%; */
     overflow: hidden;
 }
 
@@ -247,17 +234,17 @@ to {
     position: relative;
     margin-top: 5%;
     width: 100%;
-    background-image: url("https://i.ibb.co/d1DKxJR/tilegrass-v5.png"); 
-    background-size: 325px;
+    background-image: url("https://i.ibb.co/cXJMZTkr/tilegrass-v12.png"); 
+    background-size: 350px;
     background-repeat: repeat;
-    height: 650px;
+    height: 700px;
 }
 
 #metronim-page{
     position: relative;
     margin-top: -0%;
     width: 100%;
-    background-image: url("https://i.ibb.co/8gsvH047/background-fade-metronimv-2.png"); 
+    background-image: url("https://i.ibb.co/bR5bBm7L/background-fade-metronimv-6.png"); 
     background-size: 325px;
     background-repeat: repeat;
     height: 650px;
@@ -473,12 +460,10 @@ to {
 
 .screenshot-container{
     display: grid;
-    /* background-color: #CE1E27; */
     grid-template-columns: 66% 66%;
     grid-template-rows: 45% 45%;
     column-gap: 20px;
     row-gap: 20px;
-    /* height: 20%; */
     width: 60%;
     margin-left: 8%;
 }
@@ -542,7 +527,6 @@ to {
         margin-bottom: 0.8%;
         margin-top: -3.4%;
         color: white;
-        /* font-family: 'MS PGothic', Courier; */
         font-family: 'Lato', 'cursive';
         font-weight: 300;
         font-size: 1vw;
@@ -560,7 +544,6 @@ to {
         margin-bottom: 0.5%;
         margin-top: -2.0%;
         color: white;
-        /* font-family: 'MS PGothic', Courier; */
         font-family: 'Lato', 'cursive';
         font-weight: 300;
         font-size: 1vw;
@@ -654,7 +637,6 @@ to {
 
     .screenshot-container{
         display: grid;
-        /* background-color: #CE1E27; */
         grid-template-columns: 26.9% 26.9% 26.9% 26.9%;
         grid-template-rows: 20% 20%;
         column-gap: 50px;
@@ -666,7 +648,7 @@ to {
     .video-player{
         position: absolute;
         margin-top: 1%;
-        margin-left: 8%;
+        margin-left: 0%;
         width: 59.5%;
         height: 600px;
         border: solid #0000004f;
@@ -698,8 +680,8 @@ to {
         margin-top: 12%;
     }
     #groups-page{
-        background-size: 400px;
-        height: 800px;
+        background-size: 375px;
+        height: 750px;
         margin-top: 10%;
     }
     #backrooms-page{
