@@ -12,6 +12,11 @@ background-image: url("../src/img/banniere_itchio.png");
 background-repeat: repeat;
 z-index: -100;}
 
+@font-face {
+    font-family: "TGL12096.01";
+    src: url(../src/TGL12096.01.ttf);
+}
+
 #home-text{
     position: relative;
 }
@@ -308,6 +313,7 @@ to {
     color: #d4d4d4;
     animation-delay: 4.1s;
     filter: drop-shadow(0px 0px 5px #d4d4d4);
+    /* font-family: TGL12096; */
 }
 
 .title-img{
@@ -658,6 +664,7 @@ to {
         text-align: left;
         color: #b61111;
         font-family: "Quicksand", serif;
+        font-family: "TGL12096.01";
         font-weight: 500;
         margin-left: 6%;
         font-size: 100px;
