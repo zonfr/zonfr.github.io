@@ -3,6 +3,7 @@ a{color: inherit;}
     max-width: 100%;
     overflow-x: hidden;
 }
+
 body{
 margin-left: 0%;
 margin-right: 0%;
@@ -10,12 +11,17 @@ max-width: 100%;
 overflow-x: hidden;
 background-image: url("../src/img/banniere_itchio.png");
 background-repeat: repeat;
-z-index: -100;}
+z-index: -100;
+}
 
 @font-face {
     font-family: "TGL12096.01";
-    src: url(../src/TGL12096.01.ttf);
+    src: url(../src/img/TGL12096.01.ttf) format('truetype');
 }
+
+svg{
+    font-family: "TGL12096.01", sans-serif;
+} 
 
 #home-text{
     position: relative;
@@ -659,7 +665,7 @@ to {
         height: 600px;
         border: solid #0000004f;
     }
-
+    
     .work-title{
         text-align: left;
         color: #b61111;
