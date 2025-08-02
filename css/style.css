@@ -213,6 +213,7 @@ to {
     width: 165%;
     height: 290%;
     overflow: hidden;
+    margin-top: -10%;
 }
 
 .img-card{
@@ -226,9 +227,9 @@ to {
     margin-top: 80%;
     width: 100%;
     background-image: url("https://i.ibb.co/23dLdgwx/background-fade-elumin.png"); 
-    background-size: 500px;
+    background-size: 650px;
     background-repeat: repeat;
-    height: 1000px;
+    height: 1300px;
 }
 
 #firestage-page{
@@ -237,8 +238,8 @@ to {
     width: 100%;
     background-image: url("https://i.ibb.co/fGGQmcLp/background-fade-firestage-v2.png"); 
     background-repeat: repeat;
-    background-size: 350px;
-    height: 800px;
+    background-size: 550px;
+    height: 1200px;
 }
 
 #groups-page{
@@ -246,19 +247,9 @@ to {
     margin-top: 5%;
     width: 100%;
     background-image: url("https://i.ibb.co/cXJMZTkr/tilegrass-v12.png"); 
-    background-size: 350px;
+    background-size: 450px;
     background-repeat: repeat;
-    height: 700px;
-}
-
-#metronim-page{
-    position: relative;
-    margin-top: -0%;
-    width: 100%;
-    background-image: url("https://i.ibb.co/bR5bBm7L/background-fade-metronimv-6.png"); 
-    background-size: 325px;
-    background-repeat: repeat;
-    height: 650px;
+    height: 900px;
 }
 
 #backrooms-page{
@@ -266,13 +257,24 @@ to {
     margin-top: -0%;
     width: 100%;
     background-image: url("https://i.ibb.co/j9kJVhdx/background-fade-backrooms-v4.png"); 
-    background-size: 320px;
+    background-size: 475px;
     background-repeat: repeat;
-    height: 650px;
+    height: 950px;
+}
+
+#metronim-page{
+    position: relative;
+    margin-top: 0%;
+    width: 100%;
+    background-image: url("https://i.ibb.co/bR5bBm7L/background-fade-metronimv-6.png"); 
+    background-size: 500px;
+    background-repeat: repeat;
+    height: 1000px;
 }
 
 #flashreel-page{
     height: 900px; 
+    margin-top: 5%;
 }
 
 #itch-page{
@@ -487,6 +489,61 @@ to {
     border-radius: 5px;
 }
 
+.screenshot-and-data{
+    margin-top: 3%;
+    display:flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: begin;
+}
+
+.data-sheet{
+    margin-left: 8%;
+    margin-top: -1%;
+    width: 85%;
+}
+
+.tech-container{
+    margin-top: 20px;
+    display: grid;
+    row-gap: 5px;
+    grid-template-columns: 24% 24% 24% 24%;
+    padding: 10px;
+    column-gap: 2%;
+    background-color: rgba(94, 94, 94, 0.336);
+    border-radius: 10px;
+}
+
+.main-tech-card{
+    display:flex;
+    flex-direction: row;
+    width: 50%;
+    gap: 10px;
+    align-items: center;
+    padding: 5px;
+    background-color: rgba(35, 92, 158, 0.267);
+    border-radius: 10px;
+}
+
+.tech-card{
+    display:flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center
+}
+
+.data-text{
+    font-size: 3vw;
+}
+
+.main-tech-logo{
+    width: 25%;
+}
+
+.tech-logo{
+    width: 35%;
+}
+
 .welcome-text{
     text-align: left;
     align-content: center;
@@ -584,7 +641,8 @@ to {
         transform: scale(100%);
         width: 700px;
         height: 190px;
-        padding-top: 3%;
+        padding-top: 5%;
+        margin-top: 0%;
     }
     #home-icon{
         width: 15%;
@@ -646,15 +704,71 @@ to {
         margin-left: 6%;
         font-size: 5vw;
     }
+    
 
     .screenshot-container{
         display: grid;
-        grid-template-columns: 26.9% 26.9% 26.9% 26.9%;
-        grid-template-rows: 20% 20%;
-        column-gap: 50px;
-        width: 60%;
-        padding-top: 3%;
-        margin-left: 8%;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 33% 33%;
+        row-gap: 15%;
+        width: 37%;
+        /* padding-top: 3%; */
+        /* margin-left: 8%; */
+    }
+
+    .screenshot-and-data{
+        margin-top: 3%;
+        display:flex;
+        flex-direction: row;
+        gap: 60px;
+        align-items: begin;
+    }
+
+    .data-sheet{
+        margin-left: 0%;
+        margin-top: -1%;
+        width: 44%;
+    }
+
+    .tech-container{
+        margin-top: 20px;
+        display: grid;
+        row-gap: 20px;
+        grid-template-columns: 25% 25% 25% 25%;
+        padding: 10px;
+        column-gap: 0%;
+        padding-bottom: 10px;
+        background-color: rgba(94, 94, 94, 0.336);
+        border-radius: 10px;
+    }
+
+    .main-tech-card{
+        display:flex;
+        flex-direction: row;
+        width: 24%;
+        gap: 10px;
+        align-items: center;
+        padding: 5px;
+        background-color: rgba(35, 92, 158, 0.267);
+        border-radius: 10px;
+    }
+
+    .tech-card{
+        display:flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center
+    }
+
+    .data-text{
+        font-size: 1vw;
+    }
+
+    .main-tech-logo{
+        width: 35%;
+    }
+    .tech-logo{
+        width: 33%;
     }
     
     .video-player{
@@ -681,33 +795,36 @@ to {
     #elumin-page{
         position: relative;
         margin-top: 18%;
-        width: 100%;
         background-image: url("https://i.ibb.co/23dLdgwx/background-fade-elumin.png"); 
-        background-size: 400px;
+        background-size: 75vh;
         background-repeat: repeat;
-        height: 800px;
+        height: 150vh;
     }
     #firestage-page{
-        background-size: 400px;
-        height: 900px;
-        margin-top: 12%;
+        background-size: 27.5vw;
+        height: 65vw;
+        margin-top: 0%;
     }
     #groups-page{
-        background-size: 375px;
-        height: 750px;
-        margin-top: 10%;
+        background-size: 30vw;
+        height: 60vw;
+        margin-top: 0%;
     }
     #backrooms-page{
-        margin-top: 10%;
+        background-size: 27.5vw;
+        height: 55vw;
+        margin-top: 6%;
     }
     #metronim-page{
-        margin-top: 10%;
+        background-size: 27.5vw;
+        height: 55vw;
+        margin-top: 0%;
     }
     #flashreel-page{
-        margin-top: 8%;
+        margin-top: 3%;
     }
     #itch-page{
-        margin-top: 6%;
+        margin-top: 3%;
     }
     #contact-page{
         margin-top: 6%;
@@ -716,7 +833,7 @@ to {
         width: 40%;
         height: auto;
         margin-left: 7%;
-        margin-top: 2%;
+        margin-top: 1%;
     }
     
     .mobile-only{
